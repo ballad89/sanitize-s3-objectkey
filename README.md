@@ -1,6 +1,6 @@
 # sanitize-s3-objectkey
 
-This project is pretty much a translation of [sanitize-s3-objectkey](https://github.com/Advanon/sanitize-s3-objectkey) npm package into clojure.
+This project is pretty much a translation of [sanitize-s3-objectkey](https://github.com/Advanon/sanitize-s3-objectkey) into clojure.
 
 ## Installation
 
