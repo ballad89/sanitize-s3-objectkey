@@ -4,7 +4,7 @@
             [clojure.spec.alpha :as s]))
 
 
-(def SAFE_CHARACTERS #"[^0-9a-zA-Z! _\\.\\*'\\(\\)\\\-/]")
+(def SAFE_CHARACTERS #"[^0-9a-zA-Z@! _\\.\\*'\\(\\)\\\-/]")
 
 (defn- replace-latin-characters [value]
   (st/replace value #"[^A-Za-z0-9[\\] ]" #(or (lm/mapping %) %)))

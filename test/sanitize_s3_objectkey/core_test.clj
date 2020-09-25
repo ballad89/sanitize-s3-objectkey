@@ -26,8 +26,11 @@
 
 (deftest special-characters
   (testing "Should be sanitized"
-    (is (= "123456!-)*_" (sanitize "123#@%$^&@456!-)+=*_")))
-    (is (= "aeiou" (sanitize "áêīòü")))))
+    (is (= "123@@456!-)*_" (sanitize "123#@%$^&@456!-)+=*_")))
+    (is (= "aeiou" (sanitize "áêīòü")))
+    (is (= "test" (sanitize "#test")))))
+
+
 
 (deftest spaces-replaced
   (testing "spaces are replaced with the provided separator or the default"
@@ -39,3 +42,4 @@
 ;     (is (= "" (sanitize "test test test" "|")))
 ;     (is (= "" (sanitize "test test test" nil)))
 ;     (is (= "" (sanitize "test test test" "~")))))
+
