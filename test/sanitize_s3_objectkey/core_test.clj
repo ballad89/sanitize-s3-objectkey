@@ -28,7 +28,7 @@
   (testing "Should be sanitized"
     (is (= "123@@456!-)*_" (sanitize "123#@%$^&@456!-)+=*_")))
     (is (= "aeiou" (sanitize "áêīòü")))
-    (is (= "test" (sanitize "#test")))))
+    (is (= "test" (sanitize "#+test")))))
 
 
 
